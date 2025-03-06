@@ -1,12 +1,12 @@
-TOKEN = "7549403834:AAE28RQf9pj0FhQo8CQ_Z2Km56nkqFTz3IQ"
-ADMIN_IDS = {1299103295}  # Укажите ID админов
+TOKEN = ""
+ADMIN_IDS = {}  # Укажите ID админов
 # Ваш API-ключ
-API_KEY = "AQVNyI-Wmjes5gyd4_u1LF_zMptXNZKGsDwK27Pt"
+API_KEY = ""
 
 # ID папки в Яндекс.Облаке
-FOLDER_ID = "b1grk2og9qmmtu1j950f"
+FOLDER_ID = ""
 
-URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+URL = ""
 
 # Тело запроса
 data = {
