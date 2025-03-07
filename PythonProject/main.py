@@ -1,5 +1,5 @@
 import asyncio
-from config.config import TOKEN
+from config.bot import TOKEN
 from bot.database import init_db
 from aiogram import Bot, Dispatcher, F
 from bot.handlers.handler import router
@@ -9,6 +9,7 @@ from bot.handlers.all_poetry import router_all_poetry
 from bot.handlers.edit_poetry import router_edit_poetry
 from bot.handlers.rhyme_find import rhyme_router
 from bot.Admin.Poem_view import admin_router
+from bot.handlers.pay import pay_router
 from aiogram.types import ReactionTypeEmoji,Message
 
 
@@ -23,6 +24,7 @@ async def main():
     dp.include_router(router_edit_poetry)
     dp.include_router(rhyme_router)
     dp.include_router(admin_router)
+    dp.include_router(pay_router)
     await init_db()  # Создаём таблицы в базе
     await dp.start_polling(bot)
 
