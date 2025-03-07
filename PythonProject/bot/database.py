@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy import Column, Integer, String, TIMESTAMP, func, BigInteger
 
 # Подключение к базе данных PostgreSQL
-DATABASE_URL = "postgresql+asyncpg://postgres:Volodinn@localhost:5432/mydatabase"
+DATABASE_URL = "postgresql+asyncpg://postgres:*************@localhost:5432/mydatabase"
 
 # Создаём асинхронный движок SQLAlchemy
 engine = create_async_engine(DATABASE_URL, echo=False)
