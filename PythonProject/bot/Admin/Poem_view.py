@@ -1,4 +1,4 @@
-from config.config import ADMIN_IDS
+from config.bot import ADMIN_IDS
 from aiogram import Router, types, F
 from aiogram.types import Message
 from keyboards import admin_keyboard

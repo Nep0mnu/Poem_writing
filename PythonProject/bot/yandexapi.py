@@ -1,6 +1,6 @@
 import aiohttp
 from aiogram import types
-from config.config import URL, data, headers
+from config.YandexGPT import URL, data, headers
 import keyboards as kb  # Импорт клавиатуры, если она у тебя есть
 
 async def get_poetry_idea(callback: types.CallbackQuery):
