@@ -31,7 +31,7 @@ async def main():
 
 @dp.message(F.sticker)
 async def react_to_sticker(message: Message):
-    await bot.set_message_reaction(  # Используем bot, а не router!
+    await bot.set_message_reaction( 
         chat_id=message.chat.id,
         message_id=message.message_id,
         reaction=[ReactionTypeEmoji(emoji="🍓")]  # Реакция на стикер
